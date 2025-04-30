@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CureNest - Healthcare Application</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-inter min-h-screen flex flex-col">
+  <header class="bg-white shadow-md p-4 flex items-center justify-between">
+    <h1 class="text-2xl font-semibold text-blue-600">CureNest</h1>
+    <nav>
+      <ul class="flex space-x-4 text-gray-700">
+        <li><a href="#" class="hover:text-blue-600">Profile</a></li>
+        <li><a href="#" class="hover:text-blue-600">Settings</a></li>
+        <li><a href="#" class="hover:text-blue-600">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="flex flex-1 overflow-hidden">
+    <aside class="w-64 bg-white border-r border-gray-200 p-4 overflow-y-auto">
+      <nav>
+        <ul class="space-y-3">
+          <li>
+            <a href="#health-tracker" class="flex items-center space-x-3 text-gray-700 hover:text-blue-600">
+              <i class="fas fa-heartbeat"></i>
+              <span>Personal Health Tracker</span>
+            </a>
+          </li>
+          <li>
+            <a href="#mental-wellness" class="flex items-center space-x-3 text-gray-700 hover:text-blue-600">
+              <i class="fas fa-brain"></i>
+              <span>Mental Wellness</span>
+            </a>
+          </li>
+          <li>
+            <a href="#medication-reminder" class="flex items-center space-x-3 text-gray-700 hover:text-blue-600">
+              <i class="fas fa-pills"></i>
+              <span>Medication Reminder</span>
+            </a>
+          </li>
+          <li>
+            <a href="#telemedicine" class="flex items-center space-x-3 text-gray-700 hover:text-blue-600">
+              <i class="fas fa-video"></i>
+              <span>Telemedicine</span>
+            </a>
+          </li>
+          <li>
+            <a href="#diet-nutrition" class="flex items-center space-x-3 text-gray-700 hover:text-blue-600">
+              <i class="fas fa-apple-alt"></i>
+              <span>Diet & Nutrition Coach</span>
+            </a>
+          </li>
+          <li>
+            <a href="#womens-health" class="flex items-center space-x-3 text-gray-700 hover:text-blue-600">
+              <i class="fas fa-venus"></i>
+              <span>Women's Health</span>
+            </a>
+          </li>
+          <li>
+            <a href="#emergency-assistant" class="flex items-center space-x-3 text-gray-700 hover:text-blue-600">
+              <i class="fas fa-ambulance"></i>
+              <span>Emergency Health Assistant</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <main class="flex-1 overflow-y-auto p-6 space-y-8">
+      <section id="health-tracker">
+        <h2 class="text-xl font-semibold text-gray-800 mb-4">Personal Health Tracker</h2>
+        <div id="healthTrackerApp" class="bg-white p-4 rounded shadow">
+          <!-- Health Tracker UI will be loaded here -->
+          <p class="text-gray-600">Loading Personal Health Tracker...</p>
+        </div>
+      </section>
+      <section id="mental-wellness">
+        <h2 class="text-xl font-semibold text-gray-800 mb-4">Mental Wellness</h2>
+        <div id="mentalWellnessApp" class="bg-white p-4 rounded shadow">
+          <!-- Mental Wellness UI will be loaded here -->
+          <p class="text-gray-600">Loading Mental Wellness...</p>
+        </div>
+      </section>
+      <section id="medication-reminder">
+        <h2 class="text-xl font-semibold text-gray-800 mb-4">Medication Reminder</h2>
+        <div id="medicationReminderApp" class="bg-white p-4 rounded shadow">
+          <!-- Medication Reminder UI will be loaded here -->
+          <p class="text-gray-600">Loading Medication Reminder...</p>
+        </div>
+      </section>
+      <section id="telemedicine">
+        <h2 class="text-xl font-semibold text-gray-800 mb-4">Telemedicine</h2>
+        <div id="telemedicineApp" class="bg-white p-4 rounded shadow">
+          <!-- Telemedicine UI will be loaded here -->
+          <p class="text-gray-600">Loading Telemedicine...</p>
+        </div>
+      </section>
+      <section id="diet-nutrition">
+        <h2 class="text-xl font-semibold text-gray-800 mb-4">Diet & Nutrition Coach</h2>
+        <div id="dietNutritionApp" class="bg-white p-4 rounded shadow">
+          <!-- Diet & Nutrition UI will be loaded here -->
+          <p class="text-gray-600">Loading Diet & Nutrition Coach...</p>
+        </div>
+      </section>
+      <section id="womens-health">
+        <h2 class="text-xl font-semibold text-gray-800 mb-4">Women's Health</h2>
+        <div id="womensHealthApp" class="bg-white p-4 rounded shadow">
+          <!-- Women's Health UI will be loaded here -->
+          <p class="text-gray-600">Loading Women's Health...</p>
+        </div>
+      </section>
+      <section id="emergency-assistant">
+        <h2 class="text-xl font-semibold text-gray-800 mb-4">Emergency Health Assistant</h2>
+        <div id="emergencyAssistantApp" class="bg-white p-4 rounded shadow">
+          <!-- Emergency Health Assistant UI will be loaded here -->
+          <p class="text-gray-600">Loading Emergency Health Assistant...</p>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="scripts/healthTracker.js"></script>
+  <script src="scripts/mentalWellness.js"></script>
+  <script src="scripts/medicationReminder.js"></script>
+  <script src="scripts/telemedicine.js"></script>
+  <script src="scripts/dietNutrition.js"></script>
+  <script src="scripts/womensHealth.js"></script>
+  <script src="scripts/emergencyAssistant.js"></script>
+</body>
+</html>
